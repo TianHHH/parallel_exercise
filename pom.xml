@@ -14,4 +14,32 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+
+        <!-- lombok依赖, 提供@Slf4j注解 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+            <!-- provided 表示该依赖仅在 编译 和 测试 阶段可用 -->
+            <!-- Lombok 仅在 编译阶段 用于代码生成, 它不参与运行时逻辑 -->
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 日志门面接口 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+
+        <!-- 具体的日志处理实现 logback 依赖 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.14</version>
+        </dependency>
+
+    </dependencies>
+
 </project>
