@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * @author : ZQCHANG
  * @Date : 2025/1/2 16:52
- * @Desc :
+ * @Desc : join方法的练习
  */
 @Slf4j
 public class CommonFunction01 {
